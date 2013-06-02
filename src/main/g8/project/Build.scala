@@ -1,3 +1,5 @@
+import sbt._
+import sbt.Keys._
 
 object BuildSettings {
   val buildSettings =
@@ -16,8 +18,8 @@ object BuildSettings {
 
 object Build extends Build {
 
-  lazy val $name$ = Project(
-    "$name;format="word-only,camel"$",
+  lazy val $name;format="word-only,camel"$ = Project(
+    "$name$",
     file( "." ),
     settings = buildSettings ++ Seq(
       libraryDependencies := Seq(
