@@ -17,7 +17,7 @@ object BuildSettings {
 object Build extends Build {
 
   lazy val $name$ = Project(
-    "$name;format="word-only,camel"",
+    "$name;format="word-only,camel"$",
     file( "." ),
     settings = buildSettings ++ Seq(
       libraryDependencies := Seq(
