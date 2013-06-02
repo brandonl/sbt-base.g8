@@ -17,6 +17,7 @@ object BuildSettings {
 }
 
 object Build extends Build {
+  import BuildSettings._
 
   lazy val $name;format="word-only,camel"$ = Project(
     "$name$",
